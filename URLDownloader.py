@@ -85,13 +85,13 @@ def main():
 
     # Usage
     if sys.argv[1] == '-u' or sys.argv[1] == '-U':
-        print(f"Downloader_Usage: {sys.argv[0]}  FileName  DirectiveName")
-        print("FileName: File which content the link of file which must be download")
-        print("DirectiveName: Directive name where all the downloaded file must be same")
+        print(f"Downloader_Usage: {sys.argv[0]}  FileName  DirName")
+        print("FileName: File which contains list of URL's")
+        print("DirName: Name of directory to store downloaded files")
         exit()
     
     if len(sys.argv) != 3:
-        print("Downloader__Error: Incorrect Argument")
+        print("Downloader__Error: Invalid arguments")
         exit()
 
     DownloadFiles(sys.argv[1],sys.argv[2])
